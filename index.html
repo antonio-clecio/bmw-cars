@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <title>DevCar</title>
+</head>
+
+<body>
+  <header>
+    <div class="content">
+      <nav>
+        <img class="logo"
+          src="https://www.bmw.com.br/etc.clientlibs/ds2-webcomponents/clientlibs/clientlib/resources/img/BMW_Grey_Logo.svg"
+          alt="Logo BMW" />
+        <ul>
+          <li><a href="#">Modelos e Preços</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Soluções e Serviços</a></li>
+          <button>Login</button>
+        </ul>
+      </nav>
+      <div class="header-block">
+        <div class="text">
+          <p class="destak">Lançamento</p>
+          <h2>BMW 118i M Sport</h2>
+          <p>
+            O BMW Série 1 chegou para atrair todos os olhares. Seu design
+            extraordinário o distingue de todos os outros, imediatamente ao
+            primeiro olhar.
+          </p>
+        </div>
+        <img src="./images/BMW118iMSport.png" alt="BMW 118i M Sport" />
+      </div>
+    </div>
+  </header>
+
+  <section class="catalog" id="catalog">
+    <div class="content">
+      <div class="title-wrapper-catalog">
+        <p>BMW do Brasil recomenda</p>
+        <h3>Todos modelos</h3>
+      </div>
+      <div class="filter-card">
+        <input type="text" class="search-input" placeholder="Escolha seu modelo favorito" />
+        <button class="search-button">Search</button>
+      </div>
+      <div class="card-wrapper">
+        <div class="card-item">
+          <div class="model-launch">
+            <span>Lançamento</span>
+          </div>
+          <img class="photo-car"
+            src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfvuPi10tLhu1XzWVo7puMLWFmdkAj5DOP44x%25Z8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74giZ8NF1VgxNJ0%25lJ2oub5imC2yRCzXeTt%25ViPRKVZVYVOdWh1DMztifmeqVYDafHs6jmztYRSJOM67aftxdT%25qw1RSfWQlEW%25VxdSeZG4NuzWQdjc9Nh3aeZQ6KownXRjcZwBLcirx6Kc%252y1a4WwBKupk9PFe%252B3inXVIjup2XH5rGv63iprJ8iKGwXHi4TPHA9%25rJHFlMa3ou4TJIsDtpL3FlTv0YWUyXIslGAtqjCrv0s9OfqtE4GA0ogSwwNF9OALU0OXkIogOybAhrnvLUgChOq85GybUEqgAX89ChbNmUfzPoEqhk7bSkMLNmqn1hrJDyk7m5VqGSYCn178zQattE5V1PaZT4fN8zVMRcKMSkPazDxKBYdnMRaYWB20Q5DxRte2FyZ8YWxfjpIBcPteWS6iPEKMfjedwHsNBDS6jQ%25dJ82Ydw6ZuQqWptQ%25wc3ZmiifZu%25KXcjjHSc3uBrK7JJdKX324BDZTQBrXpFXIllZ24riIrMuscpF4Hv4bO0KiIFJGFhzABHvIT9IJbO2JGvlov5egpT9GsLGuNUilo90y9iwbHsLoACoHchJ0yLOELJBqTACygNyIlmlOECUkrb77sgNEbn42p10tNWuR5Eiyr6ktMLWo0CqXhFU6le"
+            alt="BMW 118i M Sport" />
+          <div class="card-content">
+            <h3>BMW 118i M Sport</h3>
+            <div class="model-car">
+              <h5>BMW Série 1</h5>
+              <span class="model-fuel">Gasolina</span>
+              <span class="model-value">A partir de R$ 293.950 à vista*.</span>
+            </div>
+            <button type="button">Solicite uma proposta</button>
+          </div>
+        </div>
+        <div class="card-item">
+          <img class="photo-car"
+            src="https://cosystatic.bmwgroup.com/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBg3RJ6l384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSRrqoQh47wMvcYi9NGrfMb3islBglUb%259cRScH8g7MbnMdoiKyJGy53JmrQ%25r9R1HW8zWubxdqogqaJhul3ilUQTqcRScH753MbnMd08YyJGy5BRbrQ%25r9SaJW8zWunJjqogqaGQFl3ilU%2575cRScHz08MbnMdgmKyJGy5i8KrQ%25r9SuFW8zWunaEqogqaG47l3ilU%25egcRScHzqjMbnMde3oyJGy5mYnrQ%25r9snYW8zWuKDHqogqaDC8l3ilUCb0cRScH48gMbnMdeo7yJGy5m3lrQ%25r9si9W8zWuKSkqogqa3bdl3ilUR4gcRScHbj7MbnMdJoHyJGy5Q35rQ%25r98RiW8zWuon%25qogqa3GIl3ilUR3pcRScHbDBMbnMdJC0yJGy5QkirQ%25r99aGW8zWuuRHqogqaabJl3ilUUJecRScHHeiMbnMddQuyJGy559KrQbBUq2rjGTSFhrQb9%25cQSW7%25IER8MI8YHQA "
+            alt="BMW 218i Gran Coupé Sport GP" />
+          <div class="card-content">
+            <h3>BMW 218i Gran Coupé Sport GP</h3>
+            <div class="model-car">
+              <h5>BMW Série 2 Gran Coupé</h5>
+              <span class="model-fuel">Gasolina</span>
+              <span class="model-value">A partir de R$ 303.950</span>
+            </div>
+            <button type="button">Solicite uma proposta</button>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="model-launch">
+            <span>Lançamento</span>
+          </div>
+          <img class="photo-car"
+            src="https://cosystatic.bmwgroup.com/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgoRual384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSGNqoQh47wMvcYi9SDq5Mb3islBglUbI1cRScHz1bMbnMdgokyJGy57u3rQ%25r9YEaW8zWuu5VqogqaRG5l3ilUbGUcRScHJ%256MbnMdoBuyJGy53SBrQ%25r9RKYW8zWubtJqogqaJ23l3ilUQT9cRScH8ZHMbnMdoP2yJGy5BubrQ%25r9Y33W8zWuEJHqogqaFQ8l3ilUjn8cRScHz5BMbnMdg3uyJGy5iRBrQ%25r9SEUW8zWunFbqogqaGCel3ilU%25becRScHzj8MbnMdgsYyJGy5iKnrQ%25r9SQ5W8zWunm7qogqaDjzl3ilUCzjcRScH4e3MbnMdeoiyJGy5m30rQ%25r9sRmW8zWuKSJqogqaDn%25l3ilUCGRcRScHbeiMbnMdJ70yJGy5Q3drQ%25r98R9W8zWuobSqogqa3Gzl3ilUR%256cRScHb%25YMbnMdJbtyJGy5QARrQ%25r98eFW8zWuoxdqogqa3V%25l3ilUUJ5cRScHHQmMbnMddQuyJGy559KrQ%25r90dHW8zWuBjjqogqaY7el3ilUEy0cRScHFNHMbnMdjIEyJGy57kirQ%25r9KaRW8zWuDCbqogqaCJGl38F5MIlBgL%250Pl38Uir3%25cYiA7QRWARj93N"
+            alt="BMW 320i M Sport" />
+          <div class="card-content">
+            <h3>BMW 320i M Sport</h3>
+            <div class="model-car">
+              <h5>BMW Série 3 Sedã</h5>
+              <span class="model-fuel">Gasolina • Activeflex • Plug-In • Híbrido</span>
+              <span class="model-value">A partir de R$ 307.950*.</span>
+            </div>
+            <button type="button">Solicite uma proposta</button>
+          </div>
+        </div>
+        <div class="card-item">
+          <img class="photo-car"
+            src="https://cosystatic.bmwgroup.com/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgbRJtl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSG9qoQh47wMvcYi9kQC5Mb3islBglUbQQcRScHJB9MbnMdom0yJGy53JmrQ%25r9R2bW8zWubAdqogqaJh5l3ilUQTzcRScH8ZAMbnMd09RyJGy5BRbrQ%25r9YEaW8zWunJEqogqaGjdl3ilU%257QcRScHzesMbnMdgQsyJGy5i0BrQ%25r9SDUW8zWunCjqogqaGJOl3ilU%25nGcRScHzqjMbnMdgCEyJGy5mYnrQ%25r9snYW8zWuKbbqogqaDJ%25l3ilUCQ1cRScH48WMbnMdezdyJGy5mgRrQ%25r9si8W8zWuoRHqogqa3%254l3ilURFjcRScHb8gMbnMdJoHyJGy5Q3grQ%25r98QxW8zWuonNqogqa3G7l3ilURy0cRScHbDBMbnMdd9SyJGy55oarQ%25r993DW8zWuu3Hqogqaakel3ilUEQ6cRScHF86MbnMdj%25OyJGy572UrQ%25r90FRW8zWuBcjqogqaYM1l3ilUEt%25cRScHFNCMbnMdjmuyJGy5s0ErQ%25r9KRbW8zWuBAsqogqaYCdl3ilU4F0cRScHe8oMb37ur1MESxgYXMb3dnqbgyFntBoJltJ0ab6"
+            alt="BMW 420i Cabrio M Sport" />
+          <div class="card-content">
+            <h3>BMW 420i Cabrio M Sport</h3>
+            <div class="model-car">
+              <h5>BMW Série 4 Cabrio</h5>
+              <span class="model-fuel">Gasolina</span>
+              <span class="model-value">A partir de R$ 447.950*.</span>
+            </div>
+            <button type="button">Solicite uma proposta</button>
+          </div>
+        </div>
+        <div class="card-item">
+          <img class="photo-car"
+            src="https://www.bmw.com.br/content/dam/bmw/common/all-models/i-series/i4/navigation/bmw-i4-mini-landingpage-modelfinder.png"
+            alt="BMW i4 eDrive40" />
+          <div class="card-content">
+            <h3>BMW i4 eDrive40</h3>
+            <div class="model-car">
+              <h5>BMW i4</h5>
+              <span class="model-fuel">Elétrico</span>
+              <span class="model-value">De 0 a 100 km/h em 5,7 segundos.</span>
+            </div>
+            <button type="button">Saiba mais</button>
+          </div>
+        </div>
+        <div class="card-item">
+          <img class="photo-car"
+            src="https://cosystatic.bmwgroup.com/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBg3RJWl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSRkqoQh47wMvcYi9INUJMb3islBglUb0mcRScHzG4MbnMdo3YyJGy53SBrQ%25r9RQsW8zWubtJqogqaJ25l3ilUQT9cRScH7QQMbnMd08KyJGy5BRbrQ%25r9YbFW8zWuEFUqogqaFJWl3ilU%25d0cRScHzoBMbnMdgmYyJGy5isorQ%25r9SoDW8zWunbVqogqaGKQl3ilU%2539cRScHzN5MbnMdgI0yJGy5i43rQ%25r9SejW8zWuKaCqogqaDJ6l3ilUCQDcRScH486MbnMdezJyJGy5QoarQ%25r98KGW8zWuobSqogqa3GIl3ilUR%25gcRScHbU8MbnMdJbkyJGy5Q4ErQ%25r98eYW8zWuuaCqoQEdcNq0zPG7ZqoQagyoGlBg1jJ3r13F5ot"
+            alt="BMW 530e M Sport Dark Edition" />
+          <div class="card-content">
+            <h3>BMW 530e M Sport Dark Edition</h3>
+            <div class="model-car">
+              <h5>BMW Série 5 Sedã</h5>
+              <span class="model-fuel">Gasolina • Plug-In Híbrido</span>
+              <span class="model-value">A partir de R$ 450.950 à vista*.</span>
+            </div>
+            <button type="button">Solicite uma proposta</button>
+          </div>
+        </div>
+        <div class="card-item">
+          <img class="photo-car"
+            src="https://cosystatic.bmwgroup.com/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgSdHJl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uRU%25qoQh47wMvcYi9KuEoMb3islBglUbtUcRSrQdr9SpnW8zcRacHHwoMbnW85WuEf9qogMbUMd0VcyJGqo9qaRkGl3iyJHy558arQ%25l3ulU%2580cRSrQdr9SpDW8zcRacHHdQMbnW85Wu3fJqogMbUMdoISyJGqo9qaDJKl3iyJHy5mgQrQ%25l3ulURGBcRSrQdr983UW8zcRacHbRfMbnW85WuomjqogMbUMdJHoyJGqo9qaGC7l3iyJHy5isDrQ%25l3ulU%25FjcRSrQdr9SDGW8zcRacHzqjMbnW85WunsJqogMbUMdgV3yJGqo9qaG2Hl3iyJHy5iSRrQ%25l3ulU%25tjcRSrQdr9SejW8zcRacH4e3MbnW85WuKbGqogMbUMdeo1yJGqo9qaGH8l3iyJHy5iRarQ%25l3ulU%25D9cRSrQdr9SQHW8zcRacHzwbMb37ur1MESxgYXMb3dnqbgyFntBoJltJ0ab6"
+            alt="BMW X6 M Competition" />
+          <div class="card-content">
+            <h3>BMW X6 M Competition</h3>
+            <div class="model-car">
+              <h5>BMW X6 M Competition</h5>
+              <span class="model-fuel">Gasolina</span>
+              <span class="model-value">A partir de R$ 1.066.950 à vista*.</span>
+            </div>
+            <button type="button">Solicite uma proposta</button>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="model-launch">
+            <span>Lançamento</span>
+          </div>
+          <img class="photo-car"
+            src="https://cosystatic.bmwgroup.com/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgKRJ9l384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSGrqoQh47wMvcYi967G2Mb3islBglUbtJcRScH1azMbnMdQVayJGy53SBrQ%25r9R2bW8zWubxGqogqaFH8l3ilUjJJcRScH7o3MbnMd0zqyJGy5BzRrQ%25r9YpDW8zWunFHqogqaGC7l3ilU%254gcRScHzmBMbnMdgl7yJGy5ieRrQ%25r9SeUW8zWuKbtqogqaDn%25l3ilURJ5cRScHbj7MbnMdJgSyJGy5Qi2rQ%25r98QwW8zWuownqogqaabdl3ilUUJocRScHHJ9MbnMddVHyJGy574BrQbBUq2rjGTSFhrQb9%25cQSW7%25IER8MI8YHQA"
+            alt="BMW M3 Competition" />
+          <div class="card-content">
+            <h3>BMW M3 Competition</h3>
+            <div class="model-car">
+              <h5>BMW M3 Competition</h5>
+              <span class="model-fuel">Gasolina</span>
+              <span class="model-value">A partir de R$ 792.950 à vista*.</span>
+            </div>
+            <button type="button">Solicite uma proposta</button>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="model-launch">
+            <span>Lançamento</span>
+          </div>
+          <img class="photo-car"
+            src="https://cosystatic.bmwgroup.com/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpua8rQbhSIqppglBgbRGal384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSDUqoQh47wMvcYi9M%25bgMb3islBglUb6%25cRScH8Z4MbnMdoPEyJGy5BRbrQ%25r9YEUW8zWunUUqogqaGQQl3ilU%2540cRScHz8oMbnMdgHOyJGy5ieSrQ%25r9SQHW8zWun87qogqaGhqogqaDJKl3ilUCQIcRScH4%25fMbnMdJmSyJGy5QinrQ%25r985RW8zWuo86qogqa3s7l3ilURKdcRScH715MbnMdgC0yJGy5QJlrQ%25r98BYW8zWun9rqogqa3oyl3ilUj7mcRScH78gMbnMdezJyJGy5iRarQ%25r9SDGW8JYHltW7%25ZnjTW8JuzM8nq0z6Fboy6oEd82"
+            alt="BMW iX xDrive50 Sport" />
+          <div class="card-content">
+            <h3>BMW iX xDrive50 Sport</h3>
+            <div class="model-car">
+              <h5>BMW iX</h5>
+              <span class="model-fuel">Elétrico</span>
+              <span class="model-value">A partir de R$ 667.950 à vista*.</span>
+            </div>
+            <button type="button">Solicite uma proposta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title-wrapper-about">
+        <p>Know About US</p>
+        <h3>About</h3>
+      </div>
+      <div class="about-content">
+        <div class="left">
+          <img src="./images/about 1.png" alt="Carro, lâmpada e engrenagem" />
+        </div>
+        <div class="right">
+          <h3>Join technology and mobility</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, voluptates sapiente ad iusto vel ex
+            exercitationem illo impedit itaque voluptatum repellat quam nisi modi deleniti asperiores nostrum
+            repudiandae nihil esse illum? Ab ducimus doloremque consequuntur, quia quibusdam, quos molestias eius ea
+            laboriosam distinctio architecto eaque enim porro numquam cumque ratione beatae suscipit, maiores saepe. Non
+            nobis recusandae eaque maxime nam praesentium, voluptatum officia? In, consequuntur iste expedita excepturi
+            quae nostrum culpa dolores? Ipsum, tempore nihil repudiandae numquam officiis molestiae ipsa omnis nam nobis
+            exercitationem. Impedit qui voluptate in quas doloremque numquam omnis nemo, possimus non similique eaque
+            repellat expedita. Quibusdam.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="content">
+      <div class="title-wrapper-features">
+        <p>What you can do</p>
+        <h3>Features</h3>
+      </div>
+      <div class="feature-card-block">
+        <div class="feature-card-item">
+          <img src="./images/feature-planet 1.png" alt="">
+          <div class="feature-text-content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="feature-card-item">
+          <img src="./images/feature-planet 1.png" alt="">
+          <div class="feature-text-content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="feature-card-item">
+          <img src="./images/feature-planet 1.png" alt="">
+          <div class="feature-text-content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="feature-card-item">
+          <img src="./images/feature-planet 1.png" alt="">
+          <div class="feature-text-content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="feature-card-item">
+          <img src="./images/feature-planet 1.png" alt="">
+          <div class="feature-text-content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="feature-card-item">
+          <img src="./images/feature-planet 1.png" alt="">
+          <div class="feature-text-content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="main">
+      <div class="content footer-links">
+        <div class="footer-company">
+          <h3>Meu BMW</h3>
+          <h5>Solicite uma proposta</h5>
+          <h5>Modelos e Preços</h5>
+        </div>
+        <div class="footer-rental">
+          <h3>BMW ConnectedDrive</h3>
+          <h5>Fale conosco</h5>
+          <h5>FAQ</h5>
+        </div>
+        <div class="footer-social">
+          <h3>Mantenha-se conectado</h3>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/bmwdobrasil/" target="_blank">
+              <img src="./images/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://www.facebook.com/BMWBrasil/" target="_blank">
+              <img src="./images/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://twitter.com/bmwbrasil" target="_blank">
+              <img src="./images/twitter.png" alt="Twitter" />
+            </a>
+            <a href="https://www.youtube.com/user/BMWTVBrasil" target="_blank">
+              <img src="./images/youtube.png" alt="YouTube" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h3>Contato</h3>
+          <h5>Fale com a BMW</h5>
+          <h5>Carreiras</h5>
+          <h5>Visita à Fábrica</h5>
+        </div>
+      </div>
+    </div>
+    <div class="last">
+      © BMW GROUP Brasil 2022
+      <ul>
+        <li>
+          <a href="#">Fale com a BMW</a>
+        </li>
+        <li>
+          <a href="#">Política de Cookies</a>
+        </li>
+        <li>
+          <a href="#">Política de Privacidade</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
