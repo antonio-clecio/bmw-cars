@@ -301,12 +301,16 @@ section .model-launch {
   padding: 50px 10px;
 }
 
+.title-wrapper-about {
+  margin-bottom: 20px; 
+}
+
 .about-content {
   max-width: 1000px;
   min-width: 300px;
   height: 466px;
   background: var(--grey-4);
-  margin: 0 auto;
+  /* margin: 0 auto; */
   border-radius: 8px;
   z-index: 10;
   padding: 10px;
@@ -366,7 +370,7 @@ section .model-launch {
 .feature-card-block {
   max-width: 1000px;
   min-width: 300px;
-  height: 600px;
+  height: auto;
   background: var(--white);
   margin: 0 auto;
   border-radius: 8px;
@@ -379,23 +383,56 @@ section .model-launch {
 
 .feature-card-item {
   max-width: 420px;
-  height: 150px;
+  height: inherit;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  padding: 15px;
   border: 1px solid #dedede3b;
   border-radius: 4px;
 }
 
 .feature-text-content {
   max-width: 60%;
-  margin: 5px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+.feature-text-content h3 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: var(--grey-1)
+}
+
+.feature-text-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.feature-linklist {
+  line-height: 24px;
+  color: var(--grey-1);
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 70px;
+  display: inline-block;
+  transition: all .25s ease;
+  cursor: pointer;
+}
+
+.feature-linklist:hover {
+  color: var(--blue-1);
 }
 
 .feature-card-item img {
-  width: 64px;
-  height: 64px;
+  width: 100%;
+  height: auto;
 }
 
 /* Footer */
