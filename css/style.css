@@ -23,7 +23,7 @@
 html,
 body {
   width: 100%;
-  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
 }
 
 header {
@@ -532,6 +532,11 @@ footer .last {
 /* Responsive adjustments */
 
 @media (max-width: 576px) {
+  htm,
+  body {
+    overflow-x: hidden;
+  }
+  
   nav ul li {
     display: none;
   }
