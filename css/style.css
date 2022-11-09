@@ -532,11 +532,12 @@ footer .last {
 /* Responsive adjustments */
 
 @media (max-width: 576px) {
-  htm,
-  body {
+
+  html, body {
+    width: 100%;
     overflow-x: hidden;
   }
-  
+
   nav ul li {
     display: none;
   }
